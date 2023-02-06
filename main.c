@@ -14,10 +14,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "nb.c"
-#include "ft_zero_till3.c"
-#include "nblib.c"
-
+#include "ft.h"
 
 int	main(int argc, char **argv)
 {

@@ -14,7 +14,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "open.c"
+#include "ft.h"
 
 int	ft_strlen(char	*str)
 {

@@ -14,8 +14,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "openlib.c"
-
+#include "ft.h"
 int	ft_strlenlib(char	*str)
 {
 	int	i;

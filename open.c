@@ -14,7 +14,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "digiscript.c"
+#include "ft.h"
 
 void	ft_openhundchar(char chain[1])
 {
@@ -27,7 +27,7 @@ void	ft_openhundchar(char chain[1])
 	count = 0;
 	fd = open("dictnb.txt", O_RDONLY);
 	read(fd, buffer, 350);
-	while (i <= n && count == 0)
+	while (i <= 350 && count == 0)
 	{
 		if (buffer[i] == chain[0])
 			count = 1;
@@ -49,7 +49,7 @@ void	ft_opendecchar(char chain[1])
 	count = 0;
 	fd = open("dictnb.txt", O_RDONLY);
 	read(fd, buffer, 350);
-	while (i <= n && count != 3)
+	while (i <= 350 && count != 3)
 	{
 		if (buffer[i] == chain[0])
 			count++;
@@ -71,7 +71,7 @@ void	ft_opendigitchar(char chain[0])
 	count = 0;
 	fd = open ("dictnb.txt", O_RDONLY);
 	read(fd, buffer, 350);
-	while (i <= n && count == 0)
+	while (i <= 350 && count == 0)
 	{
 		if (buffer[i] == chain[0])
 			count = 1;
@@ -94,7 +94,7 @@ void	ft_opendecteen(char chain[1])
 	count = 0;
 	fd = open("dictnb.txt", O_RDONLY);
 	read(fd, buffer, 350);
-	while (i <= n && count != 1)
+	while (i <= 350 && count != 1)
 	{
 		if (buffer[i] == '1')
 		{

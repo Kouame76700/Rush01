@@ -9,6 +9,8 @@
 /*   Updated: 2023/02/05 14:49:31 by tmichel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+#include "ft.h"
 
 void	ft_lib_printhundchar(int g, char *line)
 {
@@ -116,12 +118,8 @@ void	ft_lib_thousand(char *lib)
 void ft_lib_printrange(char *lib, int g)
 {
 	int	fd;
-	int	i;
-	int	count;
 	char buffer[3500];
-	
-	i = 0;
-	count = 0;
+
 	fd= open(lib, O_RDONLY);
 	read(fd,buffer,3500);
 		if(g == 4)

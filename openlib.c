@@ -14,7 +14,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include "digiscriptlib.c"
+#include "ft.h"
 
 void	ft_lib_openhundchar(char *lib, char chain[1])
 {
